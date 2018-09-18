@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Receipt">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/content_receipt" />
+
+    <include
+        layout="@layout/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editText_NameReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/editText_DateReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Date" />
+
+    <EditText
+        android:id="@+id/editText_TimeReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:inputType="time"
+        android:text="Time" />
+
+    <EditText
+        android:id="@+id/editText_AmountPaidReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Amount $" />
+
+    <View
+        android:id="@+id/view_SignatureReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_marginTop="250dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_MethodReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="380dp" />
+
+    <EditText
+        android:id="@+id/editText_EmailReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Email" />
+
+    <Button
+        android:id="@+id/button_SubmitReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Receipt"
+        app:layout_anchor="@+id/include3"
+        app:layout_anchorGravity="bottom|center" />
+
+</android.support.design.widget.CoordinatorLayout>

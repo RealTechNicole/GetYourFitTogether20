@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BillingInfo">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_billing_info" />
+
+    <include
+        layout="@layout/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editText_NameBilling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Billing Name"
+        tools:layout_marginTop="55dp" />
+
+    <EditText
+        android:id="@+id/editText_AddressBilling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="Billing Address"
+        tools:layout_marginTop="100dp" />
+
+    <EditText
+        android:id="@+id/editText_CardNumBilling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Card #"
+        tools:layout_marginTop="200dp" />
+
+    <EditText
+        android:id="@+id/editTextSecurityBilling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Security "
+        tools:layout_marginTop="240dp" />
+
+    <EditText
+        android:id="@+id/editText_ExpDateBilling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Exp Date"
+        tools:layout_marginTop="280dp" />
+
+    <Button
+        android:id="@+id/button_SubmitBilling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Billing Info"
+        tools:layout_marginTop="500dp" />
+
+</android.support.design.widget.CoordinatorLayout>
