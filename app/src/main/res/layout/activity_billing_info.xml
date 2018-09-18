@@ -76,6 +76,7 @@
         android:id="@+id/button_SubmitBilling"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickBackToAddClient"
         android:text="Submit Billing Info"
         tools:layout_marginTop="500dp" />
 

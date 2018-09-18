@@ -35,8 +35,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
         android:ems="10"
+        android:hint="@string/name_on_receipt"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:text="@string/name" />
 
     <EditText
         android:id="@+id/editText_DateReceipt"
@@ -44,8 +45,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:ems="10"
+        android:hint="@string/date_of_receipt"
         android:inputType="date"
-        android:text="Date" />
+        android:text="@string/date" />
 
     <EditText
         android:id="@+id/editText_TimeReceipt"
@@ -53,8 +55,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:ems="10"
+        android:hint="@string/time_of_receipt"
         android:inputType="time"
-        android:text="Time" />
+        android:text="@string/time" />
 
     <EditText
         android:id="@+id/editText_AmountPaidReceipt"
@@ -62,8 +65,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
         android:ems="10"
+        android:hint="@string/amount_of_receipt"
         android:inputType="number"
-        android:text="Amount $" />
+        android:text="@string/amount" />
 
     <View
         android:id="@+id/view_SignatureReceipt"
@@ -83,14 +87,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
         android:ems="10"
+        android:hint="@string/email_on_receipt"
         android:inputType="textEmailAddress"
-        android:text="Email" />
+        android:text="@string/email" />
 
     <Button
         android:id="@+id/button_SubmitReceipt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send Receipt"
+        android:onClick="onClickBackSessionDisplay"
+        android:text="@string/send_receipt"
         app:layout_anchor="@+id/include3"
         app:layout_anchorGravity="bottom|center" />
 

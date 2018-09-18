@@ -125,9 +125,21 @@
 
     <Button
         android:id="@+id/button_ToAddSessionClientInfo"
-        android:layout_width="match_parent"
+        android:layout_width="176dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="510dp"
+        android:onClick="onClickAddSession"
         android:text="Add Session" />
+
+    <Button
+        android:id="@+id/button_BackToMainSessionDisplay"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="510dp"
+        android:onClick="onClickBackToMain"
+        android:text="Back To Client List"
+        app:layout_anchor="@+id/button_BackToMainSessionDisplay"
+        app:layout_anchorGravity="top|center" />
 
 </android.support.design.widget.CoordinatorLayout>

@@ -64,6 +64,7 @@
         android:id="@+id/button_SubmitAddSession"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickReceipt"
         android:text="Submit"
         tools:layout_marginTop="515dp" />
 

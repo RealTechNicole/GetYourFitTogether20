@@ -62,6 +62,7 @@
         android:id="@+id/button_ToBillingAddClient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickBillingInfo"
         android:text="Add Billing Info"
         tools:layout_marginTop="250dp" />
 
@@ -76,6 +77,7 @@
         android:id="@+id/button_SubmitAddClient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickSessionDisplay"
         android:text="Save and Add Client"
         tools:layout_marginTop="500dp" />
 
