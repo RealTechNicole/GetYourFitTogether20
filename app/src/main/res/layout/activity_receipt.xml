@@ -6,28 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".Receipt">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
     <include
         android:id="@+id/include3"
         layout="@layout/content_receipt" />
-
-    <include
-        layout="@layout/content_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/editText_NameReceipt"
@@ -37,7 +18,7 @@
         android:ems="10"
         android:hint="@string/name_on_receipt"
         android:inputType="textPersonName"
-        android:text="@string/name" />
+        android:text="@string/name3" />
 
     <EditText
         android:id="@+id/editText_DateReceipt"
@@ -47,7 +28,7 @@
         android:ems="10"
         android:hint="@string/date_of_receipt"
         android:inputType="date"
-        android:text="@string/date" />
+        android:text="@string/date2" />
 
     <EditText
         android:id="@+id/editText_TimeReceipt"
@@ -57,7 +38,7 @@
         android:ems="10"
         android:hint="@string/time_of_receipt"
         android:inputType="time"
-        android:text="@string/time" />
+        android:text="@string/time2" />
 
     <EditText
         android:id="@+id/editText_AmountPaidReceipt"
@@ -67,7 +48,7 @@
         android:ems="10"
         android:hint="@string/amount_of_receipt"
         android:inputType="number"
-        android:text="@string/amount" />
+        android:text="@string/amount2" />
 
     <View
         android:id="@+id/view_SignatureReceipt"
@@ -89,7 +70,7 @@
         android:ems="10"
         android:hint="@string/email_on_receipt"
         android:inputType="textEmailAddress"
-        android:text="@string/email" />
+        android:text="@string/email3" />
 
     <Button
         android:id="@+id/button_SubmitReceipt"
@@ -99,5 +80,10 @@
         android:text="@string/send_receipt"
         app:layout_anchor="@+id/include3"
         app:layout_anchorGravity="bottom|center" />
+
+    <include
+        layout="@layout/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </android.support.design.widget.CoordinatorLayout>

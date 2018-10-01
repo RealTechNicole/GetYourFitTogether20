@@ -6,28 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".SessionDisplay">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
     <include
         android:id="@+id/include4"
         layout="@layout/content_session_display" />
-
-    <include
-        layout="@layout/content_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <view
         android:id="@+id/view_PhotoClientInfo"
@@ -41,9 +22,9 @@
         android:id="@+id/textView_NameClientInfo"
         android:layout_width="215dp"
         android:layout_height="48dp"
-        android:layout_marginLeft="120dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="55dp"
-        android:text="Name"
+        android:text="@string/name1"
         android:textAlignment="viewStart"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -67,13 +48,14 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="date"
-                android:text="Session Date:" />
+                android:text="@string/session_date1"
+                android:hint="Session Date"/>
 
             <CheckBox
                 android:id="@+id/checkBox_Session1ClientInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Session Completed" />
+                android:text="@string/session_completed1" />
 
             <View
                 android:id="@+id/view_SigSession1ClientInfo"
@@ -87,13 +69,15 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="date"
-                android:text="Session Date:" />
+                android:text="@string/session_date2"
+                android:hint="Session Date"/>
 
             <CheckBox
                 android:id="@+id/checkBox_Session2ClientInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Session Completed" />
+                android:text="@string/session_completed2"
+                android:hint="Session Completed"/>
 
             <View
                 android:id="@+id/view_SigSession2ClientInfo"
@@ -107,13 +91,14 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="date"
-                android:text="Session Date:" />
+                android:text="@string/session_date3"
+                android:hint="Session Date"/>
 
             <CheckBox
                 android:id="@+id/checkBox_Session3ClientInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Session Completed" />
+                android:text="@string/session_completed3" />
 
             <View
                 android:id="@+id/view_SigSession3ClientInfo"
@@ -129,17 +114,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="510dp"
         android:onClick="onClickAddSession"
-        android:text="Add Session" />
+        android:text="@string/add_session" />
 
     <Button
         android:id="@+id/button_BackToMainSessionDisplay"
         android:layout_width="168dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="200dp"
+        android:layout_marginStart="200dp"
         android:layout_marginTop="510dp"
         android:onClick="onClickBackToMain"
         android:text="Back To Client List"
         app:layout_anchor="@+id/button_BackToMainSessionDisplay"
         app:layout_anchorGravity="top|center" />
+
+    <include
+        layout="@layout/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </android.support.design.widget.CoordinatorLayout>
