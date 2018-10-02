@@ -60,10 +60,11 @@
         android:id="@+id/button_ToCameraAddClient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickTakePhoto"
         android:text="@string/add_photo"
         app:layout_anchor="@id/button_ToBillingAddClient"
-        app:layout_anchorGravity="end"
-        tools:layout_marginTop="300dp" />
+        app:layout_anchorGravity="bottom"
+        tools:layout_marginTop="400dp" />
 
     <Button
         android:id="@+id/button_SubmitAddClient"
